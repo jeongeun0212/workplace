@@ -1,0 +1,44 @@
+<body>
+    <!-- 디스플레이 속성 -->
+    <h3>디스플레이(Display) 속성</h3>
+
+    <div>
+        <span>span 태그는 기본이 inline이다.</span>
+        <p>p 태그는 기본이 block이다.</p>
+        <p style="display: inline; width: 500px; height: 80px;">
+        p 태그를 인라인으로(width, height 무시)
+        </p>
+        <span style="display: block;">span 태그를 block으로</span>
+        <p style="display: inline-block; width: 300px; height: 80px;">
+            P 태그를 (display: inline-block; width: 300px; height: 80px;)
+            속성으로 했다.
+        </p>
+    </div>
+
+    <!-- 포지셔닝 속성 -->
+    <h3>포지셔닝(position)</h3>
+    <div style="width: 600px; height: 200px; position: relative;"></div>
+        <span style="position: relative; left: 10p; top: 10px">
+            relative left 10px top 10px
+        </span>
+        <span style="position: relative; left: 10p; top: 10px">
+            relative right 10px botton 10px
+        </span>
+        <span style="position: relative; left: 10p; top: 50px">
+            absolute left 10px top 50px
+        </span>
+        <span style="position: relative; left: 10p; top: 50px">
+            absolute right 10px top 50px
+        </span>
+       
+</body>
+<style>
+    p, span { 
+        background-color: gray;
+        border: 1px dashed rgb(66, 45, 225);
+    }
+
+    div {
+        border: 1px dotted rgb(225, 100, 225);
+    }
+</style>

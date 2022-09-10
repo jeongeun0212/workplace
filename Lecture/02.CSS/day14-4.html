@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+
+    <body>
+        <h2>justify-content</h2>
+
+        <p>flex-start</p>
+        <div class="container flex-start">
+            <div class="item">A</div><div class="item">B</div><div class="item">C</div>
+        </div>
+
+        <p>flex-end</p>
+        <div class="container flex-end">
+            <div class="item">A</div><div class="item">B</div><div class="item">C</div>
+        </div>
+
+        <p>flex-center</p>
+        <div class="container flex-center">
+            <div class="item">A</div><div class="item">B</div><div class="item">C</div>
+        </div>
+
+        <p>space-between</p>
+        <div class="container space-between">
+            <div class="item">A</div><div class="item">B</div><div class="item">C</div>
+        </div>
+
+        <p>space-around</p>
+        <div class="container space-around">
+            <div class="item">A</div><div class="item">B</div><div class="item">C</div>
+    </body>
+</html>
+
+<style>
+    div { 
+        background-color: rgb(200,200,200);
+        border: 1px dotted rgb(48,48,48);
+        margin: 2px;
+    }
+
+    .container { width: 300px; }
+    .item { width: 50px; height: 50px; background-color: yellow; }
+
+    .flex-start { justify-content: flex-start; }
+    .flex-end { justify-content: flex-end; }
+    .flex-center { justify-content: center; }
+    .space-between { justify-content: space-between; }
+    .space-around { justify-content: space-around; }
+</style>

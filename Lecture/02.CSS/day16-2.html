@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+
+        <body>
+            <h3>Media Query</h3>
+            <p>미디어 쿼리를 이용한 모바일/태블릿/PC에서의 색상 스타일 적용</p>
+            <div class="box">
+                미디어 쿼리 예제
+            </div>
+        </body>
+    </head>
+</html>
+
+<style>
+    div { width: 200px; height: 200px; background-color: green; margin-bottom: 20px; color: white; }
+/* 600px 이하의 화면일 경우 아래의 스타일 적용 
+    최대 크기가 600px까지만 스타일 적용(모바일 화면)*/
+
+    @media (max-width: 600px) {
+        .box { background-color: yellow }
+    }
+
+/* 1024px 이상의 화면일 경우 아래의 스타일 적용 */
+    @media (max-width: 1024px) {
+        .box { background-color: blue; }
+    }
+
+    /* 768px 이상 1024px 이하의 경우 아래의 스타일 적용 */
+
+    @media ( min-wdith: 768px ) and ( max-width: 1024px ) {
+        .box { background-color: beige;}
+    }
+</style>

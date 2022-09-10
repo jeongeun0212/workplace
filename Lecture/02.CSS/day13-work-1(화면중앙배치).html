@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div class="box">화면 정중앙(가로세로) 배치</div>
+    </body>
+</html>
+
+<style>
+    * { padding: 0; margin: 0; }
+    body { margin: 5px; }
+    div {
+        border: 1px dotted black;
+        width: 400px;
+        height: 500px;
+        background-color: pink;
+    }
+
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+    }
+</style>
